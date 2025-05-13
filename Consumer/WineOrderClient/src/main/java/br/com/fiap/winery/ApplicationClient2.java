@@ -15,18 +15,14 @@ public class ApplicationClient2 {
         QName qNameStock = new QName("http://winery.fiap.com.br/", "WineStockServiceImplementationService");
         Service serviceStock = Service.create(urlStock, qNameStock);
         WineStockService wineStockServicePort = serviceStock.getPort(WineStockService.class);
-
         String order = wineStockServicePort.placeOrder("Cabernet Sauvignon", 2);
-        System.out.println("Order Response (ApplicationClient2):");
         System.out.println(order);
         
         URL urlWarn = URI.create("http://localhost:8086/WineWarningService?wsdl").toURL();
         QName qNameWarn = new QName("http://winery.fiap.com.br/", "WineWarningServiceImplementationService");
         Service serviceWarn = Service.create(urlWarn, qNameWarn);
         WineWarningService wineWarningServicePort = serviceWarn.getPort(WineWarningService.class);
-
         String warn = wineWarningServicePort.sendWarn();
-        System.out.println("Warning Response (ApplicationClient2):");
         System.out.println(warn);
     }
 }

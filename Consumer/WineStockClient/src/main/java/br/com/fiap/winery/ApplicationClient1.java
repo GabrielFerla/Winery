@@ -20,7 +20,6 @@ public class ApplicationClient1 {
 
         String menu = wineStockServicePort.getMenu();
     
-        System.out.println("Menu from WineStockService (ApplicationClient1):");
         System.out.println(menu);
     }
 }
