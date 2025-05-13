@@ -35,8 +35,6 @@
                     <wsdlUrls>
                         <wsdlUrl>http://localhost:8085/WineStockService?wsdl</wsdlUrl>
                     </wsdlUrls>
-                    <packageName>br.com.fiap.winery.generated</packageName> 
-                    <sourceDestDir>${project.build.directory}/generated-sources/wsimport</sourceDestDir>
                 </configuration>
                 <dependencies>
                     <dependency>
