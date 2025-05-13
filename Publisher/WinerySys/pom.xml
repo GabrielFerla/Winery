@@ -14,7 +14,6 @@
     </properties>
 
     <dependencies>
-        <!-- JAX-WS Runtime -->
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-rt</artifactId>

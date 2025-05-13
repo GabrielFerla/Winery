@@ -35,31 +35,31 @@
                     <wsdlUrls>
                         <wsdlUrl>http://localhost:8085/WineStockService?wsdl</wsdlUrl>
                     </wsdlUrls>
-                    <packageName>br.com.fiap.winery.generated</packageName> <!-- Added to avoid name clash -->
+                    <packageName>br.com.fiap.winery.generated</packageName> 
                     <sourceDestDir>${project.build.directory}/generated-sources/wsimport</sourceDestDir>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>com.sun.xml.ws</groupId>
                         <artifactId>jaxws-tools</artifactId>
-                        <version>4.0.2</version> <!-- Align with your jaxws-rt version -->
+                        <version>4.0.2</version>
                     </dependency>
                     <dependency>
                         <groupId>jakarta.xml.bind</groupId>
                         <artifactId>jakarta.xml.bind-api</artifactId>
-                        <version>4.0.0</version> <!-- Or a recent compatible version -->
+                        <version>4.0.0</version> 
                     </dependency>
                     <dependency>
                         <groupId>jakarta.jws</groupId>
                         <artifactId>jakarta.jws-api</artifactId>
-                        <version>3.0.0</version> <!-- Or a recent compatible version -->
+                        <version>3.0.0</version> 
                     </dependency>
                 </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version> <!-- Or a more recent version -->
+                <version>3.1.0</version>
                 <configuration>
                     <mainClass>br.com.fiap.winery.ApplicationClient1</mainClass>
                 </configuration>
