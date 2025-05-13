@@ -44,7 +44,7 @@ Assuma que `<caminho_para_o_projeto>` é o diretório onde você clonou ou desco
     ```
 2.  Compile e execute a aplicação cliente:
     ```bash
-    mvn compile exec:java -Dexec.mainClass="br.com.fiap.winery.ApplicationClient1"
+    mvn exec:java
     ```
     Você deverá ver a lista de vinhos disponíveis no console.
 
@@ -56,7 +56,7 @@ Assuma que `<caminho_para_o_projeto>` é o diretório onde você clonou ou desco
     ```
 2.  Compile e execute a aplicação cliente:
     ```bash
-    mvn compile exec:java -Dexec.mainClass="br.com.fiap.winery.ApplicationClient2"
+    mvn exec:java
     ```
     Você deverá ver a confirmação do pedido e um aviso de estoque no console.
 
