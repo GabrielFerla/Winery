@@ -1,5 +1,5 @@
 
-package br.com.fiap.winery.generated.orderclient;
+package br.com.fiap.winery;
 
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
@@ -31,8 +31,8 @@ public interface WineStockService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getMenu", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.generated.orderclient.GetMenu")
-    @ResponseWrapper(localName = "getMenuResponse", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.generated.orderclient.GetMenuResponse")
+    @RequestWrapper(localName = "getMenu", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.GetMenu")
+    @ResponseWrapper(localName = "getMenuResponse", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.GetMenuResponse")
     @Action(input = "http://winery.fiap.com.br/WineStockService/getMenuRequest", output = "http://winery.fiap.com.br/WineStockService/getMenuResponse")
     public String getMenu();
 
@@ -45,8 +45,8 @@ public interface WineStockService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "placeOrder", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.generated.orderclient.PlaceOrder")
-    @ResponseWrapper(localName = "placeOrderResponse", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.generated.orderclient.PlaceOrderResponse")
+    @RequestWrapper(localName = "placeOrder", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.PlaceOrder")
+    @ResponseWrapper(localName = "placeOrderResponse", targetNamespace = "http://winery.fiap.com.br/", className = "br.com.fiap.winery.PlaceOrderResponse")
     @Action(input = "http://winery.fiap.com.br/WineStockService/placeOrderRequest", output = "http://winery.fiap.com.br/WineStockService/placeOrderResponse")
     public String placeOrder(
         @WebParam(name = "arg0", targetNamespace = "")

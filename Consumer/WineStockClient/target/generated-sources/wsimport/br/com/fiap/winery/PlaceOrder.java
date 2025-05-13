@@ -1,5 +1,5 @@
 
-package br.com.fiap.winery.generated;
+package br.com.fiap.winery;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -7,9 +7,9 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java de placeOrder complex type.</p>
+ * <p>Java class for placeOrder complex type</p>.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.</p>
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>{@code
  * <complexType name="placeOrder">
@@ -37,7 +37,7 @@ public class PlaceOrder {
     protected int arg1;
 
     /**
-     * Obtém o valor da propriedade arg0.
+     * Gets the value of the arg0 property.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class PlaceOrder {
     }
 
     /**
-     * Define o valor da propriedade arg0.
+     * Sets the value of the arg0 property.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class PlaceOrder {
     }
 
     /**
-     * Obtém o valor da propriedade arg1.
+     * Gets the value of the arg1 property.
      * 
      */
     public int getArg1() {
@@ -69,7 +69,7 @@ public class PlaceOrder {
     }
 
     /**
-     * Define o valor da propriedade arg1.
+     * Sets the value of the arg1 property.
      * 
      */
     public void setArg1(int value) {

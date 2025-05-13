@@ -1,5 +1,5 @@
 
-package br.com.fiap.winery.generated;
+package br.com.fiap.winery;
 
 import javax.xml.namespace.QName;
 import jakarta.xml.bind.JAXBElement;
@@ -10,7 +10,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the br.com.fiap.winery.generated package. 
+ * generated in the br.com.fiap.winery package. 
  * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,7 +30,7 @@ public class ObjectFactory {
     private static final QName _PlaceOrderResponse_QNAME = new QName("http://winery.fiap.com.br/", "placeOrderResponse");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.fiap.winery.generated
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.fiap.winery
      * 
      */
     public ObjectFactory() {

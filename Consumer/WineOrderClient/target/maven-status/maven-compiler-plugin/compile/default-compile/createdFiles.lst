@@ -1,5 +1,4 @@
 br\com\fiap\winery\generated\orderclient\GetMenuResponse.class
-br\com\fiap\winery\WineWarningService.class
 br\com\fiap\winery\generated\orderclient\package-info.class
 br\com\fiap\winery\generated\orderclient\PlaceOrder.class
 br\com\fiap\winery\generated\orderclient\GetMenu.class
@@ -11,5 +10,4 @@ br\com\fiap\winery\generated\orderclient\SendWarnResponse.class
 br\com\fiap\winery\generated\orderclient\WineStockServiceImplementationService.class
 br\com\fiap\winery\ApplicationClient2.class
 br\com\fiap\winery\generated\orderclient\WineWarningServiceImplementationService.class
-br\com\fiap\winery\WineStockService.class
 br\com\fiap\winery\generated\orderclient\ObjectFactory.class

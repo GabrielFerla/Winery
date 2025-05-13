@@ -1,5 +1,5 @@
 
-package br.com.fiap.winery.generated;
+package br.com.fiap.winery;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -8,12 +8,12 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java de placeOrderResponse complex type.</p>
+ * <p>Java class for getMenuResponse complex type</p>.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.</p>
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>{@code
- * <complexType name="placeOrderResponse">
+ * <complexType name="getMenuResponse">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
@@ -27,16 +27,16 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "placeOrderResponse", propOrder = {
+@XmlType(name = "getMenuResponse", propOrder = {
     "_return"
 })
-public class PlaceOrderResponse {
+public class GetMenuResponse {
 
     @XmlElement(name = "return")
     protected String _return;
 
     /**
-     * Obtém o valor da propriedade return.
+     * Gets the value of the return property.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class PlaceOrderResponse {
     }
 
     /**
-     * Define o valor da propriedade return.
+     * Sets the value of the return property.
      * 
      * @param value
      *     allowed object is

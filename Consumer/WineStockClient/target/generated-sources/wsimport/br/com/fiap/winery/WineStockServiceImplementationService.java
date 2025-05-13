@@ -1,5 +1,5 @@
 
-package br.com.fiap.winery.generated;
+package br.com.fiap.winery;
 
 import java.net.MalformedURLException;
 import java.net.URL;

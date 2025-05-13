@@ -8,9 +8,9 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java de getMenuResponse complex type.</p>
+ * <p>Java class for getMenuResponse complex type</p>.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.</p>
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>{@code
  * <complexType name="getMenuResponse">
@@ -36,7 +36,7 @@ public class GetMenuResponse {
     protected String _return;
 
     /**
-     * Obtém o valor da propriedade return.
+     * Gets the value of the return property.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class GetMenuResponse {
     }
 
     /**
-     * Define o valor da propriedade return.
+     * Sets the value of the return property.
      * 
      * @param value
      *     allowed object is
