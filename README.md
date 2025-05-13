@@ -31,7 +31,7 @@ Assuma que `<caminho_para_o_projeto>` é o diretório onde você clonou ou desco
     ```
 2.  Compile e execute a aplicação que publica os serviços:
     ```bash
-    mvn compile exec:java -Dexec.mainClass="br.com.fiap.winery.Loader"
+    mvn exec:java
     ```
     Este comando iniciará os serviços. `WineStockService` estará disponível em `http://localhost:8085/WineStockService?wsdl` e `WineWarningService` em `http://localhost:8086/WineWarningService?wsdl`.
     Mantenha este terminal em execução.
