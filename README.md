@@ -14,18 +14,20 @@ O projeto é dividido em três módulos Maven:
 
 ## Pré-requisitos
 
-*   Java JDK (versão 11 ou superior)
+*   Java JDK (versão 17 ou superior)
 *   Apache Maven (versão 3.6.0 ou superior)
 
 ## Instruções para Execução
 
 Siga os passos abaixo na ordem indicada. É recomendado utilizar terminais separados para o publicador e cada cliente.
 
+Assuma que `<caminho_para_o_projeto>` é o diretório onde você clonou ou descompactou este projeto (ou seja, o diretório que contém esta pasta `Winery`).
+
 ### 1. Publicar os Web Services (`WinerySys`)
 
 1.  Navegue até o diretório do publicador:
     ```bash
-    cd "c:\Users\gabri\OneDrive\Área de Trabalho\Winery\Publisher\WinerySys"
+    cd "<caminho_para_o_projeto>/Winery/Publisher/WinerySys"
     ```
 2.  Compile e execute a aplicação que publica os serviços:
     ```bash
@@ -38,7 +40,7 @@ Siga os passos abaixo na ordem indicada. É recomendado utilizar terminais separ
 
 1.  Em um **novo terminal**, navegue até o diretório do cliente de estoque:
     ```bash
-    cd "c:\Users\gabri\OneDrive\Área de Trabalho\Winery\Consumer\WineStockClient"
+    cd "<caminho_para_o_projeto>/Winery/Consumer/WineStockClient"
     ```
 2.  Compile e execute a aplicação cliente:
     ```bash
@@ -50,7 +52,7 @@ Siga os passos abaixo na ordem indicada. É recomendado utilizar terminais separ
 
 1.  Em um **novo terminal**, navegue até o diretório do cliente de pedidos:
     ```bash
-    cd "c:\Users\gabri\OneDrive\Área de Trabalho\Winery\Consumer\WineOrderClient"
+    cd "<caminho_para_o_projeto>/Winery/Consumer/WineOrderClient"
     ```
 2.  Compile e execute a aplicação cliente:
     ```bash
