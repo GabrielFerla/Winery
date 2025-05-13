@@ -2,35 +2,40 @@ package br.com.fiap.winery;
 
 import java.net.URI;
 import java.net.URL;
-import javax.xml.namespace.QName;
+import javax.xml.namespace.QName; // Ensure this is the correct QName import
 import jakarta.xml.ws.Service;
+
+// Import the generated JAX-WS classes from the new package
+import br.com.fiap.winery.generated.orderclient.WineStockService;
+import br.com.fiap.winery.generated.orderclient.WineWarningService;
+// If you were to use the generated service implementation classes directly (e.g. new WineStockServiceImplementationService(...))
+// you would import them as well, like:
+// import br.com.fiap.winery.generated.orderclient.WineStockServiceImplementationService;
+// import br.com.fiap.winery.generated.orderclient.WineWarningServiceImplementationService;
+
 
 public class ApplicationClient2 {
     public static void main(String[] args) throws Exception {
-        // Cria uma URL para o arquivo WSDL do serviço de pedido
-        URL url = URI.create("http://localhost:8085/WineStockService?wsdl").toURL();
-        // Cria um QName com o namespace e nome do serviço
-        QName qName = new QName("http://winery.fiap.com.br/", "WineStockServiceImplementationService");
-        // Cria o serviço usando a URL e o QName
-        Service service = Service.create(url, qName);
-        // Obtém uma porta/interface para o serviço
-        WineStockService wineStockService = service.getPort(WineStockService.class);
-        // Chama o método placeOrder e armazena o resultado
-        String order = wineStockService.placeOrder("Cabernet Sauvignon", 2);
-        // Imprime o pedido
+        // Steps 37-40: Setup for WineStockService
+        URL urlStock = URI.create("http://localhost:8085/WineStockService?wsdl").toURL();
+        QName qNameStock = new QName("http://winery.fiap.com.br/", "WineStockServiceImplementationService");
+        Service serviceStock = Service.create(urlStock, qNameStock);
+        WineStockService wineStockServicePort = serviceStock.getPort(WineStockService.class);
+
+        // Step 41: Call placeOrder
+        String order = wineStockServicePort.placeOrder("Cabernet Sauvignon", 2);
+        System.out.println("Order Response (ApplicationClient2):");
         System.out.println(order);
         
-        // Cria uma URL para o arquivo WSDL do serviço de aviso
-        URL url2 = URI.create("http://localhost:8086/WineWarningService?wsdl").toURL();
-        // Cria um QName com o namespace e nome do serviço
-        QName qName2 = new QName("http://winery.fiap.com.br/", "WineWarningServiceImplementationService");
-        // Cria o serviço usando a URL e o QName
-        Service service2 = Service.create(url2, qName2);
-        // Obtém uma porta/interface para o serviço
-        WineWarningService wineWarningService = service2.getPort(WineWarningService.class);
-        // Chama o método sendWarn e armazena o resultado
-        String warn = wineWarningService.sendWarn();
-        // Imprime o aviso
+        // Steps 58-61: Setup for WineWarningService
+        URL urlWarn = URI.create("http://localhost:8086/WineWarningService?wsdl").toURL();
+        QName qNameWarn = new QName("http://winery.fiap.com.br/", "WineWarningServiceImplementationService");
+        Service serviceWarn = Service.create(urlWarn, qNameWarn);
+        WineWarningService wineWarningServicePort = serviceWarn.getPort(WineWarningService.class);
+
+        // Step 62: Call sendWarn
+        String warn = wineWarningServicePort.sendWarn();
+        System.out.println("Warning Response (ApplicationClient2):");
         System.out.println(warn);
     }
 }
