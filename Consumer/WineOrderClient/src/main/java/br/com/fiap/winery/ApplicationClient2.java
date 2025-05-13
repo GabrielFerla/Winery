@@ -5,10 +5,6 @@ import java.net.URL;
 import javax.xml.namespace.QName;
 import jakarta.xml.ws.Service;
 
-import br.com.fiap.winery.generated.orderclient.WineStockService;
-import br.com.fiap.winery.generated.orderclient.WineWarningService;
-
-
 public class ApplicationClient2 {
     public static void main(String[] args) throws Exception {
         URL urlStock = URI.create("http://localhost:8085/WineStockService?wsdl").toURL();
